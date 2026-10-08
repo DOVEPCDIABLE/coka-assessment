@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="assets/fonts.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
+    <script src="motion.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -165,8 +166,15 @@
         id="ecosystem"
         aria-labelledby="ecosystem-title"
       >
+        <canvas class="topo-field" aria-hidden="true"></canvas>
         <div class="section-label">
-          <span>02 / THE ECOSYSTEM</span><span>A CONNECTED WORLD</span>
+          <span>02 / THE ECOSYSTEM</span
+          ><span class="ecosystem-controls"
+            >A CONNECTED WORLD
+            <button class="motion-toggle" aria-pressed="false" hidden>
+              Pause motion <span aria-hidden="true">Ⅱ</span>
+            </button></span
+          >
         </div>
         <div class="section-heading">
           <h2 id="ecosystem-title">

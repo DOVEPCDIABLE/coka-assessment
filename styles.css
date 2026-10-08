@@ -1447,3 +1447,89 @@ textarea:focus-visible {
     animation: none !important;
   }
 }
+
+/* ThreeUI Topo Field sits behind the introduction, leaving every card readable. */
+.ecosystem {
+  position: relative;
+  isolation: isolate;
+}
+.topo-field {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68%;
+  height: 370px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.7;
+  mask-image:
+    linear-gradient(to right, transparent, #000 35%),
+    linear-gradient(to bottom, #000 45%, transparent);
+  mask-composite: intersect;
+}
+.ecosystem-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.motion-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 9px;
+  letter-spacing: 0;
+  border: 1px solid #b7bfad;
+  padding: 5px 9px;
+  background: #eaece3;
+  color: var(--green);
+}
+.motion-toggle:hover {
+  background: #dce0d4;
+}
+.motion-toggle[aria-pressed="true"] {
+  background: var(--green);
+  color: var(--paper);
+}
+@keyframes dialog-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.detail-dialog[open] {
+  animation: dialog-arrive 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.motion-paused *,
+.motion-paused *::before,
+.motion-paused *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+@media (max-width: 580px) {
+  .ecosystem-controls {
+    gap: 0;
+  }
+  .ecosystem-controls > .motion-toggle {
+    margin-left: 10px;
+    font-size: 8px;
+    padding: 4px 6px;
+  }
+  .topo-field {
+    width: 100%;
+    height: 310px;
+    opacity: 0.45;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .detail-dialog[open] {
+    animation: none;
+  }
+  .motion-toggle {
+    display: none;
+  }
+}

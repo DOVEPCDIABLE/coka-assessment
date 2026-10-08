@@ -11,7 +11,7 @@ The page introduces Crystal first, then connects her purpose to her ecosystem, d
 
 Warm neutrals, forest green, editorial typography and the supplied portraits create a calm, distinctive identity. Project concepts are labelled honestly. Missing initiative links lead to contextual information and Crystal’s verified LinkedIn profile rather than invented destinations.
 
-I chose semantic HTML, responsive CSS and small vanilla JavaScript interactions because this single-page experience does not need a framework. Local fonts, compressed WebP images and deferred JavaScript keep dependencies and network overhead low. The site includes keyboard navigation, native modal dialogs, visible focus states, responsive layouts and reduced-motion support.
+I chose semantic HTML, responsive CSS and small vanilla JavaScript interactions because this single-page experience does not need a framework. Local fonts, compressed WebP images and deferred JavaScript keep dependencies and network overhead low. Keyboard navigation and accessible dialogs support usability. Adapted ThreeUI contours and native reveals add motion with pause and reduced-motion controls.
 
 The contact flow helps visitors draft and copy a message; it clearly explains that delivery happens through LinkedIn. No enquiry submission or data collection is simulated.
 
@@ -51,3 +51,5 @@ RESEARCH / IMPLEMENTATION NOTES (not part of the word-limited responses)
 - Brand names use proposed typographic treatments; they are not claimed to be official initiative logos.
 - Project captions describe supplied imagery. Concept renders are labelled as concepts; no unverified project metrics are claimed.
 - Analytics described above are a proposal and are not installed in the assessment site.
+
+- Motion: ThreeUI Community Topo Field, @designcodeio/threeui 1.2.0, adapted under MIT. Upstream: https://github.com/MengTo/threeui. License included in assets/licenses/ThreeUI-MIT.txt.

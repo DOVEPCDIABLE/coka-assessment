@@ -26,6 +26,7 @@ npm run build
 - `index.html`: content, page structure and accessible navigation.
 - `styles.css`: visual system, desktop/mobile layouts and reduced-motion styles.
 - `app.js`: initiative filtering, mobile navigation, native project/initiative dialogs and message drafting.
+- `motion.js`: section reveals, staggered transitions and an adapted ThreeUI topographic shader.
 - `assets/`: optimised supplied imagery and local fonts.
 - `SUBMISSION.txt`: design note, AI proposal, analytics response and source notes.
 
@@ -46,3 +47,9 @@ Contact dialogs let a visitor draft and copy an introduction, then open Crystalâ
 Semantic landmarks and heading hierarchy, a skip link, visible focus rings, announced filter results, Escape-to-close native modal dialogs with focus return, mobile navigation state and reduced-motion styles are included. Fonts are local; the hero image is prioritised; later images are lazy-loaded. Images are compressed WebP derivatives of the supplied originals.
 
 Fonts: DM Sans and Italiana, distributed under the SIL Open Font License. License notices are included in `assets/`.
+
+## Motion and ThreeUI attribution
+
+The ecosystem background adapts the WebGL shader from ThreeUI Communityâ€™s **Topo Field**, distributed in `@designcodeio/threeui` version 1.2.0. [Upstream source](https://github.com/MengTo/threeui). Copyright (c) 2026 Meng To; the MIT notice is included in `assets/licenses/ThreeUI-MIT.txt`. The shader is adapted directly to this static site; no React or Three.js runtime is required. Changes include a transparent sage palette, bounded resolution, a 30 fps limit and suspension when outside the viewport or when the tab is hidden.
+
+Hero introductions, one-time section/card reveals, filter transitions and dialog entrances use browser-native animations. Visitors can pause motion beside the ecosystem heading. Reduced-motion preferences disable animation and leave a static contour field. Content remains visible if JavaScript or WebGL is unavailable.
