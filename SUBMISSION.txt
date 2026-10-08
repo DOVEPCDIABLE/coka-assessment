@@ -1,11 +1,11 @@
-CRYSTAL KIZOR — STAGE 1 ASSESSMENT
+CRYSTAL KIZOR: STAGE 1 ASSESSMENT
 
 LIVE WEBSITE: Pending deployment
 SOURCE CODE / GITHUB: https://github.com/DOVEPCDIABLE/coka-assessment
 
-PART 1 — DESIGN AND TECHNOLOGY NOTE (maximum 200 words)
+PART 1: DESIGN AND TECHNOLOGY NOTE (maximum 200 words)
 
-I organised Crystal’s ecosystem around one idea: building a better human experience. Three themes—spaces and objects, ideas and learning, people and possibility—help visitors understand the relationships between the initiatives before choosing a destination.
+I organised Crystal’s ecosystem around one idea: building a better human experience. Three themes (spaces and objects, ideas and learning, people and possibility) help visitors understand the relationships between the initiatives before choosing a destination.
 
 The page introduces Crystal first, then connects her purpose to her ecosystem, demonstrates it through selected work, and ends with clear routes for project clients, event organisers and collaborators. Research and writing sit directly under her personal brand rather than becoming another competing business.
 
@@ -15,7 +15,7 @@ I chose semantic HTML, responsive CSS and small vanilla JavaScript interactions 
 
 The contact flow helps visitors draft and copy a message; it clearly explains that delivery happens through LinkedIn. No enquiry submission or data collection is simulated.
 
-PART 2 — AI PRODUCT THINKING (maximum 300 words)
+PART 2: AI PRODUCT THINKING (maximum 300 words)
 
 TEA Practice Companion would help early-career architects turn a professional question into a practical learning plan grounded in The Effective Architect’s approved teaching materials.
 
@@ -27,9 +27,9 @@ I would use the Gemini API with its File Search retrieval tool. It can index a c
 
 The first version would contain 20 reviewed TEA resources, a simple web interface and a server endpoint that keeps the API key private. It would support one task at a time and return structured actions and citations. Before a small pilot, I would test 50 representative questions with an architect, including unsupported questions and malicious instructions embedded in documents.
 
-Safeguards include source verification, rate limits, cost caps and no user-uploaded project files initially. It must never approve structural decisions, code compliance or construction safety. Users should not submit confidential client data. Success means users find the right resource and complete a useful next action—not simply generate more messages.
+Safeguards include source verification, rate limits, cost caps and no user-uploaded project files initially. It must never approve structural decisions, code compliance or construction safety. Users should not submit confidential client data. Success means users find the right resource and complete a useful next action. Message volume alone is not a useful measure.
 
-PART 3 — ANALYTICS & IMPROVEMENT (maximum 250 words)
+PART 3: ANALYTICS & IMPROVEMENT (maximum 250 words)
 
 I would measure whether visitors reach a useful destination: an initiative, a project conversation, a speaking invitation or a learning resource. I would track acquisition source, device, engaged visits, initiative selections, outbound clicks and contact starts. For a future enquiry form, I would measure starts, validation failures and server-confirmed successful submissions. A LinkedIn click or copied message is a handoff, not a confirmed enquiry.
 
