@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+dist/
+.playwright/
+
+# Original assessment assets; only optimised website assets are published.
+Crystal_s pictures/
+Other assets/
+WEB DEVELOPER - STAGE 1 ASSESSMENT.pdf
